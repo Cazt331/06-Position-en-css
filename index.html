@@ -20,7 +20,13 @@
         />
       </div>
 
-      <nav class="nav-menu">
+      <button class="hamburger-menu" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
         <ul>
           <li><a href="#">CARTA</a></li>
           <li><a href="#">CAFÉ</a></li>
@@ -38,6 +44,40 @@
         <button class="btn btn-white">Iniciar sesión</button>
       </div>
     </header>
+
+    <section class="hero-banner">
+      <div class="hero-content">
+        <h1>Bienvenido a Starbucks</h1>
+        <p>Descubre nuestras mejores promociones y ofertas especiales</p>
+        <button class="btn btn-green">Ver promociones</button>
+      </div>
+    </section>
+
+    <section class="products-gallery">
+      <h2>Nuestros Productos Destacados</h2>
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/200" alt="Producto 1" />
+          <h3>Espresso</h3>
+          <p>$5.950</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/200" alt="Producto 2" />
+          <h3>Cappuccino</h3>
+          <p>$6.950</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/200" alt="Producto 3" />
+          <h3>Latte</h3>
+          <p>$6.950</p>
+        </div>
+        <div class="gallery-item">
+          <img src="https://via.placeholder.com/200" alt="Producto 4" />
+          <h3>Mocha</h3>
+          <p>$7.450</p>
+        </div>
+      </div>
+    </section>
 
     <main class="main-container">
       <article class="card">
@@ -111,4 +151,26 @@
       </div>
     </footer>
   </body>
+  <script>
+    // Menú hamburguesa responsivo
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.getElementById("navMenu");
+    const headerRight = document.querySelector(".header-right");
+
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+      headerRight.classList.toggle("active");
+    });
+
+    // Cerrar menú al hacer click en un link
+    const navLinks = navMenu.querySelectorAll("a");
+    navLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+        headerRight.classList.remove("active");
+      });
+    });
+  </script>
 </html>

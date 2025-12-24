@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starbucks Clone</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Starbucks Colombia</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header class="header">
@@ -18,100 +22,81 @@
           alt="Starbucks Logo"
           class="logo"
         />
+        <nav class="nav-menu" id="navMenu">
+          <ul>
+            <li><a href="#">CARTA</a></li>
+            <li><a href="#">CAFÉ</a></li>
+            <li><a href="#">NOVEDADES</a></li>
+            <li><a href="#">REWARDS</a></li>
+          </ul>
+        </nav>
       </div>
 
       <button class="hamburger-menu" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
+        <span></span><span></span><span></span>
       </button>
-
-      <nav class="nav-menu" id="navMenu">
-        <ul>
-          <li><a href="#">CARTA</a></li>
-          <li><a href="#">CAFÉ</a></li>
-          <li><a href="#">NOVEDADES</a></li>
-          <li><a href="#">REWARDS</a></li>
-        </ul>
-      </nav>
 
       <div class="header-right">
         <a href="#" class="find-store">
           <span class="material-symbols-outlined">location_on</span>
           Buscar una tienda
         </a>
-        <button class="btn btn-black">Regístrese ahora</button>
-        <button class="btn btn-white">Iniciar sesión</button>
+        <button class="btn btn-black">Regístrate</button>
+        <button class="btn btn-white">Ingresa</button>
       </div>
     </header>
 
-    <section class="hero-banner">
-      <div class="hero-content">
-        <h1>Bienvenido a Starbucks</h1>
-        <p>Descubre nuestras mejores promociones y ofertas especiales</p>
-        <button class="btn btn-green">Ver promociones</button>
-      </div>
-    </section>
-
-    <!-- Sección promocional: Stranger Things -->
-    <section class="promo-banner">
-      <div class="promo-inner">
-        <div class="promo-left">
-          <h2>¿LISTO PARA EL <br />UPSIDE DOWN?</h2>
-          <a href="#" class="btn promo-btn">Buscar una tienda</a>
-        </div>
-        <div class="promo-right">
-          <img
-            src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c20_hero_623x386/public/2025-12/Banner%20web%20-%20strager%20thing%20%281%29.png.webp?itok=Z5nFvsBs"
-            alt="Stranger Things"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- beneficios / resumen de recompensas -->
-    <section class="benefits">
-      <div class="benefits-container">
-        <h2 class="benefits-title">
-          Saluda a la infinidad de opciones y, sí, al café gratis.
-        </h2>
-
-        <div class="benefits-grid">
-          <div class="benefit">
-            <img
-              src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-1_0.png.webp?itok=tLskwVAj"
-              alt="Estrellas"
-              class="benefit-icon"
-            />
-            <div class="benefit-body">
-              <h3>Acumula Estrellas con cada compra</h3>
-              <p>
-                $2000 = 1 Estrella <span class="benefit-small-star">⭐</span>
-              </p>
-            </div>
+    <main>
+      <section class="promo-banner">
+        <div class="container-wide promo-inner">
+          <div class="promo-left">
+            <h2>¿LISTO PARA EL <br />UPSIDE DOWN?</h2>
+            <a href="#" class="btn btn-inverse-outline">Buscar una tienda</a>
           </div>
-
-          <div class="benefit">
+          <div class="promo-right">
             <img
-              src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-2_0.png.webp?itok=L6tJHc_2"
-              alt="Bebida gratis"
-              class="benefit-icon"
+              src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c20_hero_623x386/public/2025-12/Banner%20web%20-%20strager%20thing%20%281%29.png.webp?itok=Z5nFvsBs"
+              alt="Stranger Things Banner"
             />
-            <div class="benefit-body">
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits-container">
+          <h2 class="benefits-title">
+            Saluda a la infinidad de opciones y, sí, al café gratis.
+          </h2>
+
+          <div class="benefits-grid">
+            <div class="benefit">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-1_0.png.webp?itok=tLskwVAj"
+                alt="Estrellas"
+                class="benefit-icon"
+              />
+              <h3>Acumula Estrellas con cada compra</h3>
+              <p>$2000 = 1 Estrella ⭐</p>
+            </div>
+
+            <div class="benefit">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-2_0.png.webp?itok=L6tJHc_2"
+                alt="Bebida gratis"
+                class="benefit-icon"
+              />
               <h3>¡50 Estrellas es una bebida de regalo!</h3>
               <p>
                 ¿La única forma en que Starbucks® sabe mejor? Cuando es gratis
               </p>
             </div>
-          </div>
 
-          <div class="benefit">
-            <img
-              src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-3.png.webp?itok=d25Pc12x"
-              alt="Nivel Gold"
-              class="benefit-icon"
-            />
-            <div class="benefit-body">
+            <div class="benefit">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c09_items_list_192x192/public/2023-11/rewards-3.png.webp?itok=d25Pc12x"
+                alt="Nivel Gold"
+                class="benefit-icon"
+              />
               <h3>100 Estrellas en el año = Nivel Gold</h3>
               <p>
                 El nivel Gold desbloquea emocionantes regalos durante todo el
@@ -119,135 +104,158 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="benefits-actions">
-          <button class="btn btn-green">Regístrese ahora</button>
-          <button class="btn btn-white">Iniciar sesión</button>
+          <div class="benefits-actions">
+            <button class="btn btn-green-outline">Regístrate</button>
+            <button class="btn btn-black-outline">Ingresa</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <main class="main-container">
-      <article class="card">
-        <div class="card-image">
-          <img
-            src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-11/AF_BANNER_WEB_DUO_FAVORITO.jpg.webp?itok=LIVtFA3d"
-            alt="Dúo Favorito"
-          />
-          <div class="price-badge">DESDE $17.900</div>
-        </div>
-        <div class="card-content">
-          <h2>¡TU NUEVO DÚO FAVORITO!</h2>
-          <p>
-            Se armó el combo en Starbucks, sabor que refresca, combinación que
-            enamora desde $17.900.
-          </p>
-          <button class="btn btn-green">Descubre más</button>
-        </div>
-      </article>
+      <section class="content-section">
+        <div class="container-wide cards-grid">
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-11/AF_BANNER_WEB_DUO_FAVORITO.jpg.webp?itok=LIVtFA3d"
+                alt="Dúo Favorito"
+              />
+            </div>
+            <div class="card-content">
+              <h2>¡TU NUEVO DÚO FAVORITO!</h2>
+              <p>
+                Se armó el combo en Starbucks, sabor que refresca, combinación
+                que enamora desde $17.900.
+              </p>
+              <button class="btn btn-green-solid">Descubre más</button>
+            </div>
+          </article>
 
-      <article class="card">
-        <div class="card-image">
-          <img
-            src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNERS_COLOMBIA_NARIN%CC%83O.png.webp?itok=w_UEEJZk"
-            alt="Café Colombia"
-          />
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNERS_COLOMBIA_NARIN%CC%83O.png.webp?itok=w_UEEJZk"
+                alt="Café Colombia"
+              />
+            </div>
+            <div class="card-content">
+              <h2>Viaja por Colombia</h2>
+              <p>
+                Disfruta de los mejores granos seleccionados de nuestra región.
+              </p>
+              <button class="btn btn-green-solid">Conoce más</button>
+            </div>
+          </article>
         </div>
-        <div class="card-content">
-          <h2>Viaja por Colombia</h2>
-          <p>Disfruta de los mejores granos seleccionados de nuestra región.</p>
-          <button class="btn btn-green">Conoce más</button>
-        </div>
-      </article>
-    </main>
+      </section>
 
-    <main class="main-container">
-      <article class="card">
-        <div class="card-image">
-          <img
-            src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNER_HAGAMOS_EL_CAMBIO.png.webp?itok=WUl50IBR"
-            alt="Dúo Favorito"
-          />
-        </div>
-        <div class="card-content">
-          <h2>Trae tu reutilizable</h2>
-          <p>¡Obtén un 15% de descuento en tu bebida favorita</p>
-        </div>
-      </article>
+      <section class="content-section" style="padding-top: 0">
+        <div class="container-wide cards-grid">
+          <article class="card bg-green-light">
+            <div class="card-image">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNER_HAGAMOS_EL_CAMBIO.png.webp?itok=WUl50IBR"
+                alt="Reutilizable"
+                style="object-fit: contain; padding: 20px"
+              />
+            </div>
+            <div class="card-content">
+              <h2>Trae tu reutilizable</h2>
+              <p>¡Obtén un 15% de descuento en tu bebida favorita!</p>
+            </div>
+          </article>
 
-      <article class="card">
-        <div class="card-image">
-          <img
-            src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNERS_TERMINOS_CONDICIONES_2.png.webp?itok=OEcWSeW6"
-            alt="Café Colombia"
-          />
+          <article class="card bg-dark-green">
+            <div class="card-image">
+              <img
+                src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/BANNERS_TERMINOS_CONDICIONES_2.png.webp?itok=OEcWSeW6"
+                alt="Términos y condiciones"
+                style="object-fit: contain; padding: 20px"
+              />
+            </div>
+            <div class="card-content">
+              <h2>Nuestras actividades</h2>
+              <button class="btn btn-green-solid">Más información</button>
+            </div>
+          </article>
         </div>
-        <div class="card-content">
-          <h2>Nuestras actividades</h2>
-          <button class="btn btn-green">Más información</button>
+      </section>
+
+      <section class="full-width-banner">
+        <div class="container-wide banner-split">
+          <div class="banner-text">
+            <h2>Nuestras historias</h2>
+            <button class="btn btn-green-solid">Saber más</button>
+          </div>
+          <div class="banner-img">
+            <img
+              src="https://www.starbucks.com.co/sites/starbucks-co-pwa/files/styles/c22_featured_card_531x273/public/2025-01/AF_BANNER_NUESTRAS_HISTORIAS.jpg.webp?itok=MJl0JdXS"
+              alt="Historias"
+            />
+          </div>
         </div>
-      </article>
+      </section>
+
+      <section class="store-locator-section">
+        <div class="container-wide locator-banner">
+          <div class="locator-text">
+            <h2>Buscar una tienda</h2>
+            <p>Encuentra tu tienda Starbucks más cercana.</p>
+            <button class="btn btn-white">Conoce la ubicación</button>
+          </div>
+          <div class="locator-map">
+            <img src="/assets/mapa.png" alt="Mapa Placeholder" />
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer">
-      <div class="footer-container">
-        <div class="footer-logo">
+      <div class="container-wide footer-grid">
+        <div class="footer-column">
           <img
             src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
-            alt="Starbucks Logo"
             class="logo"
+            style="height: 60px; margin-bottom: 20px"
+            alt="Starbucks"
           />
         </div>
-
-        <div class="footer-section">
+        <div class="footer-column">
           <h3>Sobre nosotros</h3>
           <ul>
             <li><a href="#">Acerca de Starbucks</a></li>
             <li><a href="#">Trabaja con nosotros</a></li>
-            <li><a href="#">Historias y noticias Starbucks</a></li>
-            <li><a href="#">Sobre Notmilk</a></li>
-            <li><a href="#">Guía de preparación de un buen café en casa</a></li>
+            <li><a href="#">Historias y noticias</a></li>
+            <li><a href="#">Sustentabilidad</a></li>
           </ul>
         </div>
-
-        <div class="footer-section">
+        <div class="footer-column">
           <h3>Atención al Cliente</h3>
           <ul>
-            <li><a href="#">Sugerencias y reclamos</a></li>
+            <li><a href="#">Contacto</a></li>
             <li><a href="#">Factura Electrónica</a></li>
+            <li><a href="#">Formas de comprar</a></li>
           </ul>
         </div>
-
-        <div class="footer-section">
-          <h3>Comunicados Oficiales</h3>
-          <ul>
-            <li><a href="#"></a></li>
-          </ul>
+        <div class="footer-column">
+          <h3>Social</h3>
+          <div class="social-icons">
+            <a href="#">📷</a> <a href="#">📘</a> <a href="#">🐦</a>
+          </div>
         </div>
+        <div class="footer-column"></div>
+      </div>
+      <div class="container-wide footer-bottom">
+        <p>© 2025 Starbucks Coffee Company. Reservados todos los derechos.</p>
       </div>
     </footer>
-  </body>
-  <script>
-    // Menú hamburguesa responsivo
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
-    const headerRight = document.querySelector(".header-right");
 
-    hamburger.addEventListener("click", () => {
-      hamburger.classList.toggle("active");
-      navMenu.classList.toggle("active");
-      headerRight.classList.toggle("active");
-    });
-
-    // Cerrar menú al hacer click en un link
-    const navLinks = navMenu.querySelectorAll("a");
-    navLinks.forEach((link) => {
-      link.addEventListener("click", () => {
-        hamburger.classList.remove("active");
-        navMenu.classList.remove("active");
-        headerRight.classList.remove("active");
+    <script>
+      const hamburger = document.getElementById("hamburger");
+      const navMenu = document.getElementById("navMenu");
+      hamburger.addEventListener("click", () => {
+        alert("Funcionalidad de menú móvil");
       });
-    });
-  </script>
+    </script>
+  </body>
 </html>
